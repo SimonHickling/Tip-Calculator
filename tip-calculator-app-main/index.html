@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tip calculator app</title>
+</head>
+<body>
+
+<img class="header-icon" src="images/logo.svg">
+
+<div class="calc-container">
+  <div class="bill-input">
+    <h1>Bill</h1><p class="hidden" id="error-message">Please enter a number!</p>
+    <input class="bill-input input-main" id="bill-input" type="number" placeholder="£ 0">
+  </div>
+
+  <h1 class="select-tip">Select Tip %</h1>
+  <div class="perc-win-grid">
+    
+  <button class="percentage-window active" id="five-percent">
+    5%
+  </button>
+  <button class="percentage-window" id="ten-percent">
+  10%
+  </button>
+  <button class="percentage-window" id="fifteen-percent">
+  15%
+  </button>
+  <button class="percentage-window" id="twentyfive-percent">
+  25%
+  </button>
+  <button class="percentage-window" id="fifty-percent">
+  50%
+  </button>  
+  <div class="custom-window">
+  <input class="custom-input" type="number" placeholder="Custom" id="custom-percent">
+  </div>
+  </div>
+
+  <div class="no-people">
+    <h1>Number of People</h1>
+    <input class="people-input input-main" id="number-people" type="number" placeholder="0" value="1">
+  </div>
+
+<div class="result-window">
+  <div class="person-result">
+    <h2>Tip Amount</h2>
+    <p>/ person</p>
+  </div>
+  <div class="pers-result-var"><span>£ </span><span id="per-var">0.00</span></div>
+  <div class="total-result">
+    <h2>Total</h2>
+    <p>/ person</p>
+  </div>
+  <div class="tot-result-var"><span>£ </span><span id="tot-var">0.00</span></div>
+
+  <button class="button" id="reset-button">Reset</button>
+</div>
+
+</div>
+
+<h2>Coded by: <bold>Simon Hickling</bold></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
